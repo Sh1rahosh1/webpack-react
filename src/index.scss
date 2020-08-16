@@ -1,0 +1,8 @@
+.test{
+    color:red;
+    box-sizing: border-box;
+    ::placeholder {
+        color: gray;
+      }
+}
+
