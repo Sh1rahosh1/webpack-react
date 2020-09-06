@@ -105,24 +105,25 @@
    yarn add style-loader css-loader sass sass-loader --dev
    ```
 9.  postcss-loader css预处理插件
+    
+    在根目录下创建postcss.config.js
 
-   在根目录下创建postcss.config.js
-
-   ```
-   module.exports = {
+    ```
+    module.exports = {
         plugins: [
             require('autoprefixer'),
             require('postcss-nested')
         ]
-   }
-   ```
-   autoprefixer 用于处理css的浏览器兼容(增加前缀)
-   postcss-nested 用于展开嵌套规则的插件
+    }
+    ```
+    autoprefixer 用于处理css的浏览器兼容(增加前缀)
+    
+    postcss-nested 用于展开嵌套规则的插件
 
-   ```
-   yarn add postcss-loader autoprefixer postcss-nested --dev
-   ```
-11. 添加antd及对应types
+    ```
+    yarn add postcss-loader autoprefixer postcss-nested --dev
+    ```
+10. 添加antd及对应types
     
     ```
     yarn add antd
