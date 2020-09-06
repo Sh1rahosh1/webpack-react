@@ -15,7 +15,6 @@ describe('load page', () => {
         subject.find('Button').at(0).simulate('click');
         subject.find('Button').at(1).simulate('click');
         expect(subject.find('.testDiv').at(0).text()).toEqual('3')
-        subject.debug();
         expect(subject.state().count).toEqual(3)
     })
 })

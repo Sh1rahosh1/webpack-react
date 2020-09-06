@@ -2,7 +2,6 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
-
   clearMocks: true,
   coverageDirectory: "coverage",
   preset: 'ts-jest',
@@ -10,9 +9,5 @@ module.exports = {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
     "^.+\\.(js|jsx)$": "babel-jest",
   },
-  // transformIgnorePatterns: [
-  //   "\\\\node_modules\\\\",
-  //   "\\.pnp\\.[^\\\\]+$"
-  // ],
   setupFilesAfterEnv: ["./src/setupTests.ts"],
 };
