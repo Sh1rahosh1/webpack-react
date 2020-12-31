@@ -1,6 +1,7 @@
 import { Button } from 'antd';
 import React from 'react';
-import { HashRouter, Route, RouteComponentProps, Switch } from 'react-router-dom';
+import { Route, RouteComponentProps } from 'react-router-dom';
+import useLogin from '../../useStore/useLogin';
 
 
 const Home: React.FC<RouteComponentProps> = (props) => {
@@ -8,7 +9,6 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         <div>
             <div>
                 <Button onClick={() => {
-                    console.log(props, 'aaa')
                     props.history.push({
                         pathname: '/home/home1'
                     })
@@ -33,8 +33,9 @@ const Home: React.FC<RouteComponentProps> = (props) => {
 }
 
 const Home1: React.FC<RouteComponentProps> = () => {
+    const { name } = useLogin();
     return (
-        <div>home1</div>
+        <div>home1,welcome {name}</div>
     )
 }
 
